@@ -14,4 +14,5 @@ google.com,heise.de
 
 ## Credits
 blog [i am off the bus](https://iamoffthebus.wordpress.com/2014/02/04/powershell-to-get-remote-websites-ssl-certificate-expiration/)
+
 Jochen [on stackoverflow](https://stackoverflow.com/questions/39253055/powershell-script-to-get-certificate-expiry-for-a-website-remotely-for-multiple)
