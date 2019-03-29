@@ -1,14 +1,17 @@
-param([String[]] $urls)
+param([String] $urls)
 $minimumCertAgeDays = 30
 $timeoutMilliseconds = 3000
 
 #disabling the cert validation check. This is what makes this whole thing work with invalid certs...
 [Net.ServicePointManager]::ServerCertificateValidationCallback = {$true}
+[string]$urls
 
+write-host '<?xml version="1.0" encoding="UTF-8" ?>'
 Write-Host "<prtg>"
 #foreach ($url in $urls){ #param has to be -Urls @("www.google.com","www.heise.de")
 
-$urlList = $urls.split(",")
+
+$urlList = $urls.split("{,}")
 
 foreach ($url in $urlList){
     Write-Host "<result>"
